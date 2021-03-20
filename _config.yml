@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Robert M. Estrada
+email:       robert@robertmestrada.com
+author:      Robert Estrada
+description: "A Portfolio site of my projects, skills, and experiences."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "https://github.com/robertestrada/robertestrada.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
@@ -23,7 +23,7 @@ bing_verification:
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
@@ -47,7 +47,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: robertestrada
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
@@ -55,8 +55,8 @@ twitter_username:
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username:
-angellist_username:
+linkedin_username: robertmestrada
+angellist_username: robert-m-estrada
 medium_id:
 bitcoin_url:
 paypal_url:

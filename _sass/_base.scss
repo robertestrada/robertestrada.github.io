@@ -32,3 +32,28 @@ body {
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+.skills-container {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fill, 128px);
+  grid-template-rows: repeat(auto-fill, 64px);
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(133, 32, 12);
+}

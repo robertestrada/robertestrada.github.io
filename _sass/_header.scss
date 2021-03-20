@@ -1,6 +1,10 @@
 .site-header {
   padding-top: $space-1;
   padding-bottom: $space-2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: white;
 }
 
 .site-header a {

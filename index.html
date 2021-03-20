@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-{% assign posts_count = paginator.posts | size %}
 
 <div class="home">
   <div id="section-about-me" class="py2">
-    <h1>About Me</h1>
+    <h2>About Me</h2>
     I passionately problem-solve with creativity and empathy in Full Stack software development roles, with experience in
     JavaScript, React, Redux, Python, Sequelize, Node.js, Express.js, PostgreSQL, Flask, SQLAlchemy, Alembic, SQL, HTML,
     CSS, AWS S3, Heroku, GitHub, and Docker.
@@ -22,7 +21,7 @@ layout: default
     go for easy hikes nearby, and meander between pescatarian and vegeterian cooking.
   </div>
   <div id="section-skills" class="py2">
-    <h1>Skills</h1>
+    <h2>Skills</h2>
     <div class="skills-container">
       <div class="skill-container">
         <svg viewBox="0 0 128 128">
@@ -214,7 +213,7 @@ layout: default
     </div>
   </div>
   <div id="section-projects" class="py2">
-    <h1>Projects</h1>
+    <h2>Projects</h2>
     <img alt="Whim Logo" src="https://whim-bucket.s3-us-west-1.amazonaws.com/whim-assets/whim-logo.svg" style="width: 8rem">
     <br>
     <i>"Splurging made easy!"</i>
@@ -303,26 +302,94 @@ layout: default
       secure, forms
       </li>
     </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img alt="Zenmo Logo" src="https://zenmo-bucket.s3-us-west-1.amazonaws.com/assets/zenmo_logo_blue.svg" style="width: 8rem">
+    <br>
+    <i>"Share Payments"</i>
+    <br>
+    <br>
+    <b>Purpose:</b>
+    <br>
+    A full-stack single-page Venmo clone where users can make transactions or requests along with comments and likes while following other users.
+    <br>
+    <br>
+    <b>Start sharing now:</b>
+    <br>
+    <a href="https://zenmo-app.herokuapp.com">zenmo-app.herokuapp.com</a>
+    <br>
+    <br>
+    <b>Zenmo in action:</b>
+    <br>
+    <i>login & infinite scrolling</i>
+    <img alt="Zenmo Login Feature GIF" src="https://rme-portfolio.s3-us-west-2.amazonaws.com/zenmo-login-1.gif">
+    <br>
+    <br>
+    <i>leave likes & comments</i>
+    <img alt="Whim Comment Like Feature GIF" src="https://rme-portfolio.s3-us-west-2.amazonaws.com/zenmo-feed-switch-1.gif">
+    <br>
+    <br>
+    <i>make friends & pay them</i>
+    <img alt="Zenmo Pay Feature GIF" src="https://rme-portfolio.s3-us-west-2.amazonaws.com/zenmo-feed-switch-1.gif">
+    <br>
+    <br>
+    <b>Project Repository:</b>
+    <br>
+    <a href="https://github.com/jc328/venmo">github.com/jc328/venmo</a>
+    <br>
+    <br>
+    <b>Technologies:</b>
+    <br>
+    React, Redux, JavaScript, Python, Flask, SQLAlchemy, PostgreSQL, AWS S3, Google Oauth2, Docker
+    <br>
+    <br>
+    <b>Feature Highlights:</b>
+    <br>
+    <ul>
+      <li>
+        Collaborated with fellow team members using GitHub Projects agile methods to manage responsibilities and produce
+        features
+      </li>
+      <li>
+        Created 3 unique main feed types with React hooks to show either user public, friend, or private transactions based on
+        user preference
+      </li>
+      <li>
+        Added user ability to make comments and likes on posts based on friendship status by passing React hooks between
+        components
+      </li>
+      <li>
+        Integrated Google Oauth2 via hidden backend API key combined with Google user data requests to enable one-button
+        login/signup
+      </li>
+    </ul>
   </div>
   <div id="section-contact-me" class="py2">
-    <h1>Contact Me</h1>
+    <h2>Contact Me</h2>
     Send me an email:
+    <br>
     <a href="mailto:{{ site.email }}">robert@robertmestrada.com</a>
     <br>
     <br>
     Reach out to my LinkedIn:
+    <br>
     <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">linkedin.com/in/robertmestrada</a>
     <br>
     <br>
     Check out my GitHub:
+    <br>
     <a href="https://www.github.com/{{ site.github_username }}">github.com/robertestrada</a>
     <br>
     <br>
     View my Angel List Profile:
+    <br>
     <a href="https://www.angel.co/u/{{ site.angellist_username }}">angel.co/u/robert-m-estrada</a>
     <br>
     <br>
     Located in:
+    <br>
     <a href="https://goo.gl/maps/nb8bzBxYUF232f1v7">San Diego, California</a>
   </div>
 </div>

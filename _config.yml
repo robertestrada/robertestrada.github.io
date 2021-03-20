@@ -4,7 +4,7 @@ email:       robert@robertmestrada.com
 author:      Robert Estrada
 description: "A Portfolio site of my projects, skills, and experiences."
 baseurl:     ""
-url:         "https://github.com/robertestrada/robertestrada.github.io"
+url:         "robertmestrada.com"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md

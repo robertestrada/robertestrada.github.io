@@ -11,7 +11,10 @@
 .social-icons a.fa {
   cursor: pointer;
   opacity: 0.8;
-  padding: 0.2em;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
 }
 
 .social-icons a.fa:hover {

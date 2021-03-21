@@ -36,8 +36,12 @@ body {
 .skills-container {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 140px));
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
   grid-template-rows: repeat(auto-fill, 140px);
+}
+
+.img-width {
+  width: 100%;
 }
 
 .skill-container {

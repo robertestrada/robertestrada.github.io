@@ -18,10 +18,6 @@ html, body {
   min-height: 100%;
 }
 
-img {
-  max-width: 100%;
-}
-
 em img {
   max-width: 100%;
   margin-left: 0;
@@ -46,11 +42,46 @@ body {
 
 .skill-container {
   display: flex;
+  padding: 0 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 64px;
   height: 128px;
+  fill: #333;
+  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
+  transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
+}
+
+.skill-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  box-shadow:
+    0 0.9px 3.6px rgba(0, 0, 0, 0.049),
+    0 2.5px 10px rgba(0, 0, 0, 0.073),
+    0 6px 24.1px rgba(0, 0, 0, 0.096),
+    0 20px 80px rgba(0, 0, 0, 0.15)
+  ;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
+  transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
+}
+
+.skill-container:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  color: $header-color;
+  fill: #85200c;
+}
+
+.skill-container:hover::after {
+  opacity: 1;
 }
 
 .skill-label {

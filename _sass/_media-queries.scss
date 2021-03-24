@@ -96,16 +96,6 @@
     float: right;
   }
 
-  .sub-header {
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-  }
-
   blockquote {
     margin-left: $space-3;
     padding: $space-3;
@@ -129,16 +119,6 @@
 
   html {
     font-size: 18px;
-  }
-
-  .sub-header {
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
   }
 }
 

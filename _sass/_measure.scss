@@ -8,9 +8,8 @@
 .measure.header {
   position: fixed;
   padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -65,4 +64,44 @@
 
 .measure.header:hover::after {
   opacity: 1;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 24px;
+  filter: contrast(115%);
+  -webkit-transition: transform 1s ease;
+  transition: transform 1s ease;
+}
+
+.about-right:hover {
+  -webkit-transform: scale(1.025, 1.025);
+  transform: scale(1.025, 1.025);
+}
+
+.headshot-img {
+  object-fit: cover;
+}
+
+.special-link {
+  color: #333;
+  font-style: italic;
 }

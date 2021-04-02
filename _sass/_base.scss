@@ -32,8 +32,10 @@ body {
 .skills-container {
   display: grid;
   justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
-  grid-template-rows: repeat(auto-fill, 140px);
+  // grid-template-rows: repeat(auto-fill, 140px);
 }
 
 .img-width {
@@ -49,8 +51,8 @@ body {
   width: 64px;
   height: 128px;
   fill: #333;
-  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
-  transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
+  -webkit-transition: color 0.5s ease, opacity 0.5s ease, transform 0.5s ease, fill 0.5s ease;
+  transition: color 0.5s ease, opacity 0.5s ease, transform 0.5s ease, fill 0.5s ease;
 }
 
 .skill-container::after {
@@ -69,8 +71,8 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
-  transition: color 1s ease, opacity 1s ease, transform 1s ease, fill 1s ease;
+  -webkit-transition: color 0.5s ease, opacity 0.5s ease, transform 0.5s ease, fill 0.5s ease;
+  transition: color 0.5s ease, opacity 0.5s ease, transform 0.5s ease, fill 0.5s ease;
 }
 
 .skill-container:hover {
@@ -92,4 +94,128 @@ body {
 
 h2 {
   color: #85200c;
+}
+
+.project-action__container {
+  display: grid;
+  // width: 100%;
+  // height: 100%;
+  // justify-items: center;
+  // align-items: center;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  // grid-template-rows: repeat(2, minmax(13rem, auto));
+}
+
+.project-action__container::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.project-action__container > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.project-action__tile {
+  position: relative;
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  color: #333;
+  border-radius: 10px;
+  box-shadow:
+    0 0.9px 3.6px rgba(0, 0, 0, 0.012),
+    0 2.5px 10px rgba(0, 0, 0, 0.018),
+    0 6px 24.1px rgba(0, 0, 0, 0.024),
+    0 20px 80px rgba(0, 0, 0, 0.037)
+  ;
+  -webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+  transition: box-shadow 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+}
+
+.project-action__tile::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  box-shadow:
+    0 0.9px 3.6px rgba(0, 0, 0, 0.049),
+    0 2.5px 10px rgba(0, 0, 0, 0.073),
+    0 6px 24.1px rgba(0, 0, 0, 0.096),
+    0 20px 80px rgba(0, 0, 0, 0.15)
+  ;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+  transition: box-shadow 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+}
+
+
+
+.project-action__tile:hover {
+  z-index: 2;
+}
+
+.project-action__tile:hover::after {
+  opacity: 1;
+}
+
+.project-action__tile:nth-child(1):hover {
+  margin-right: calc(-100% - 2rem);
+  margin-bottom: calc(-100%);
+}
+
+.project-action__tile:nth-child(2):hover {
+  margin-left: calc(-100% - 2rem);
+  margin-bottom: calc(-100%);
+}
+
+.project-action__tile:nth-child(3):hover {
+  margin-right: calc(-100% - 2rem);
+  margin-top: calc(-50%);
+  margin-bottom: calc(-50%);
+}
+
+.project-action__tile:nth-child(4):hover {
+  margin-left: calc(-100% - 2rem);
+  margin-top: calc(-50%);
+  margin-bottom: calc(-50%);
+}
+
+.project-action__tile:nth-child(5):hover {
+  margin-right: calc(-100% - 2rem);
+  margin-top: calc(-100%);
+}
+
+.project-action__tile:nth-child(6):hover {
+  margin-left: calc(-100% - 2rem);
+  margin-top: calc(-100%);
+}
+
+.project-action__tile.action-end:nth-child(3):hover {
+  margin-right: calc(-100% - 2rem);
+  margin-top: calc(-100%);
+  margin-bottom: 0;
+}
+
+.project-action__tile.action-end:nth-child(4):hover {
+  margin-left: calc(-100% - 2rem);
+  margin-top: calc(-100%);
+  margin-bottom: 0;
+}
+
+.project-action__title {
+  padding-bottom: 1rem;
 }

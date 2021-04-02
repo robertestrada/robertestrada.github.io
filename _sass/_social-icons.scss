@@ -20,8 +20,8 @@
   padding-bottom: 0.25rem;
   padding-right: 0.34em;
   padding-left: 0.34em;
-  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease;
-  transition: color 1s ease, opacity 1s ease, transform 1s ease;
+  -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .social-icons a.fa::after {
@@ -40,8 +40,8 @@
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease;
-  transition: color 1s ease, opacity 1s ease, transform 1s ease;
+  -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .social-icons a.fa:hover {

@@ -156,8 +156,8 @@
     0 100px 80px rgba(0, 0, 0, 0.02)
   ;
   background-color: white;
-  -webkit-transition: box-shadow 1s ease, opacity 1s ease, transform 1s ease;
-  transition: box-shadow 1s ease, opacity 1s ease, transform 1s ease;
+  -webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+  transition: box-shadow 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .py2::after {
@@ -178,8 +178,8 @@
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: box-shadow 1s ease, opacity 1s ease, transform 1s ease;
-  transition: box-shadow 1s ease, opacity 1s ease, transform 1s ease;
+  -webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+  transition: box-shadow 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .py2:hover {
@@ -219,8 +219,8 @@
     inset 0 30.1px 24.1px rgba(0, 0, 0, 0.007),
     inset 0 100px 80px rgba(0, 0, 0, 0.01)
   ;
-  -webkit-transition: box-shadow 1s ease, opacity 1s ease;
-  transition: box-shadow 1s ease, opacity 1s ease;
+  -webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease;
+  transition: box-shadow 0.5s ease, opacity 0.5s ease;
 }
 
 .project-wrapper::after {
@@ -239,8 +239,8 @@
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: box-shadow 1s ease, opacity 1s ease;
-  transition: box-shadow 1s ease, opacity 1s ease;
+  -webkit-transition: box-shadow 0.5s ease, opacity 0.5s ease;
+  transition: box-shadow 0.5s ease, opacity 0.5s ease;
 }
 
 .project-wrapper:hover::after {
@@ -269,8 +269,8 @@
   align-items: center;
   color: #333;
   border-radius: 12px;
-  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease;
-  transition: color 1s ease, opacity 1s ease, transform 1s ease;
+  -webkit-transition: color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+  transition: color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .contact-method::after {
@@ -288,8 +288,8 @@
   height: 100%;
   top: 0;
   opacity: 0;
-  -webkit-transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease;
+  -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .contact-method:hover {

@@ -26,8 +26,8 @@
   background-image: none;
   border-bottom: none;
   text-decoration: none;
-  -webkit-transition: transform 1s ease;
-  transition: transform 1s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 i.header-subtitle {
@@ -72,8 +72,8 @@ i.header-subtitle {
   border-radius: 5px;
   text-align: center;
   z-index: 2;
-  -webkit-transition: color 1s ease, opacity 1s ease, transform 1s ease;
-  transition: color 1s ease, opacity 1s ease, transform 1s ease;
+  -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .nav-link::after {
@@ -92,8 +92,8 @@ i.header-subtitle {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: opacity 1s ease, transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease;
+  -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .nav-link:hover {

@@ -42,6 +42,11 @@ body {
   width: 100%;
 }
 
+.pdf-width {
+  width: 100%;
+  height: 100%;
+}
+
 .skill-container {
   display: flex;
   padding: 0 2rem;
@@ -128,7 +133,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   height: auto;
   color: #333;
   border-radius: 10px;
@@ -218,4 +223,17 @@ h2 {
 
 .project-action__title {
   padding-bottom: 1rem;
+}
+
+.sub-link {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+
+.sub-link::before {
+  content: "◦";
+  position: absolute;
+  left: 0;
 }
